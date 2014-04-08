@@ -19,8 +19,8 @@
           <div class="message">${flash.message}</div>
       </g:if>
       <p>
-        <label for="username">Número de Cuenta</label>
-        <g:textField name="numeroCuenta" />
+        <label for="username">Correo</label>
+        <g:textField name="correo" />
       </p>
       <p>
         <label for="password">Contraseña</label>

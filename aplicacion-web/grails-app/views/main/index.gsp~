@@ -4,7 +4,7 @@
   <meta name="layout" content="main" />
 </head>
 <body>
-<g:if test="${session?.user}">
+<g:if test="${session?.usuario}">
 </g:if>
 <g:else>
   <g:form class="simpleform" style="width:50%;" url="[controller:'user',action:'login']">
@@ -19,8 +19,8 @@
           <div class="message">${flash.message}</div>
       </g:if>
       <p>
-        <label for="username">Número de Cuenta</label>
-        <g:textField name="numeroCuenta" />
+        <label for="username">Correo</label>
+        <g:textField name="correo" />
       </p>
       <p>
         <label for="password">Contraseña</label>
