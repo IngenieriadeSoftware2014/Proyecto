@@ -21,7 +21,7 @@
     <g:if test="${session?.usuario}">
 <div id="login">
         ${session?.user?.nombre} ${session?.user?.apellidoPaterno} |
-        <g:link controller="usuario" action="logout">Logout</g:link></div>
+        <g:link controller="user" action="logout">Logout</g:link></div>
 <!-- END #login -->
     </g:if>
 <h1></h1>

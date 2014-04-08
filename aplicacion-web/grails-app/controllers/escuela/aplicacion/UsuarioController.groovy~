@@ -33,13 +33,13 @@ class UsuarioController {
 	
             if (u) {
                 // username and password match -> log in
-                session.usuario = u
+                session.user = u
                 redirect(controller:'main')
             } else {
                 flash.message = "Usuario no esta en la base de datos"
                 redirect(controller:'main')
             }
-        } else if (session.usuario) {
+        } else if (session.user) {
             // don't allow login while user is logged in
             redirect(controller:'main')
         }

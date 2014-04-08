@@ -17,7 +17,7 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/alumno?useUnicode=yes&characterEncoding=UTF-8"
+            url = "jdbc:mysql://localhost/escuela?useUnicode=yes&characterEncoding=UTF-8"
             username = "root"
             password = "root"
         }
@@ -25,7 +25,7 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/alumno?useUnicode=yes&characterEncoding=UTF-8"
+            url = "jdbc:mysql://localhost/escuela?useUnicode=yes&characterEncoding=UTF-8"
             username = "root"
             password = "root"
         }

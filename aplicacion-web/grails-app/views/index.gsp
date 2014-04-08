@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
-		<title>Welcome to Grails</title>
+		<title>Pagina Principal</title>
 		<style type="text/css" media="screen">
 			#status {
 				background-color: #eee;
@@ -19,6 +19,7 @@
 				border-radius: 0.6em;
 			}
 
+
 			.ie6 #status {
 				display: inline; /* float double margin fix http://www.positioniseverything.net/explorer/doubled-margin.html */
 			}
@@ -28,6 +29,7 @@
 				list-style-type: none;
 				margin-bottom: 0.6em;
 				padding: 0;
+
 			}
 
 			#status li {
@@ -42,6 +44,7 @@
 
 			#page-body {
 				margin: 2em 1em 1.25em 18em;
+				
 			}
 
 			h2 {
@@ -76,38 +79,65 @@
 
 				#page-body h1 {
 					margin-top: 0;
+
 				}
 			}
+
+
+.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #123d54;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#afd9fa 0%,
+		#588fad);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#afd9fa),
+		to(#588fad));
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #003366;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
 		</style>
 	</head>
 	<body>
-		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div id="status" role="complementary">
-			<h1>Application Status</h1>
-			<ul>
-				<li>App version: <g:meta name="app.version"/></li>
-				<li>Grails version: <g:meta name="app.grails.version"/></li>
-				<li>Groovy version: ${GroovySystem.getVersion()}</li>
-				<li>JVM version: ${System.getProperty('java.version')}</li>
-				<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>
-				<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
-				<li>Domains: ${grailsApplication.domainClasses.size()}</li>
-				<li>Services: ${grailsApplication.serviceClasses.size()}</li>
-				<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
-			</ul>
-			<h1>Installed Plugins</h1>
-			<ul>
-				<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-					<li>${plugin.name} - ${plugin.version}</li>
-				</g:each>
-			</ul>
-		</div>
+		
+<g:form controller="main" action="index">
+  <g:submitButton name="buttom_login" value="Iniciar Sesión"  class="css3button"/>
+</g:form>
+
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
+			<h1>Página Principal</h1>
+			<p>32 años de experiencia nos avalan y consolidan como una empresa líder en la enseñanza del idioma inglés.  En nuestras instalaciones encontrarás un ambiente agradable y con nuestro método de enseñanza descubrirás lo fácil que es aprender este idioma.
+
+
+
+Contamos con diversos tipos de cursos y seguramente alguno se adecúa a tus necesidades :
+
+-Intensivos 2 horas diarias
+-Semi Intensivos
+-Sabatinos 6 horas
+-Cursos para maestros
+-Conversación
+-Preparación y aplicación del TOEFL
+-Cursos para empresas</p>
 
 			<div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>
