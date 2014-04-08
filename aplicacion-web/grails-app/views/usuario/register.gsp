@@ -16,9 +16,9 @@
       </div>
     </g:hasErrors>
     <p>
-      <label for="username">No. Cuenta</label>
-      <g:textField name="numeroCuenta" value="${usuario?.numeroCuenta}"
-        class="${hasErrors(bean:usuario,field:'username','errors')}"/>
+      <label for="username">Correo</label>
+      <g:textField name="correo" value="${usuario?.correo}"
+        class="${hasErrors(bean:usuario,field:'correo','errors')}"/>
     </p>
     <p>
       <label for="password">Password</label>
