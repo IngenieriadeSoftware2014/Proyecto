@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="${resource(dir:'css',file:'pop.css')}" />
     <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
   <g:layoutHead />
+  <style>
+    #imgAcademy{
+        height: 250px;
+    }
+  </style>
 </head>
 <body>
-<div id="wrapper">
- 
+    <img src="${resource(dir:'images',file:'academy.fw.png')}" alt="header" id="imgAcademy"/>
+<div id="wrapper"> 
     <!-- header picture -->
-<div id="header">
-      <img src="${resource(dir:'images',file:'logo_opt.jpg')}" alt="header" /></div>
+
+      
 <!-- END #header -->
  
     <!-- username | logout link -->

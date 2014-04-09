@@ -3,6 +3,12 @@
 	<head>
 		<meta name="layout" content="main"/>
 		<title>Pagina Principal</title>
+                <!--Link que usamos para la fuente que usaremos-->
+                <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+                <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+                <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+                <!--Link para la biblioteca bootstrap-->
+                <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<style type="text/css" media="screen">
 			#status {
 				background-color: #eee;
@@ -115,17 +121,21 @@
 		0px 1px 0px rgba(255,255,255,0.3);
 }
 
+.textPrincipal{
+    font-family: 'Lato';
+}
+
 		</style>
 	</head>
 	<body>
 		
 <g:form controller="main" action="index">
-  <g:submitButton name="buttom_login" value="Iniciar Sesión"  class="css3button"/>
+    <g:submitButton name="buttom_login" value="Iniciar Sesión"  class="btn btn-primary"/>
 </g:form>
 
 		<div id="page-body" role="main">
-			<h1>Página Principal</h1>
-			<p>32 años de experiencia nos avalan y consolidan como una empresa líder en la enseñanza del idioma inglés.  En nuestras instalaciones encontrarás un ambiente agradable y con nuestro método de enseñanza descubrirás lo fácil que es aprender este idioma.
+			<h1 class="textPrincipal">Code for Food Academy</h1>
+			<p class="textPrincipal">32 años de experiencia nos avalan y consolidan como una empresa líder en la enseñanza del idioma inglés.  En nuestras instalaciones encontrarás un ambiente agradable y con nuestro método de enseñanza descubrirás lo fácil que es aprender este idioma.
 
 
 
